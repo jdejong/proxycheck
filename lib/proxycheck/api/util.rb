@@ -11,7 +11,7 @@ module ProxyCheck
 
 			def call(path, api_version = "v1", type = :get, params = {})
 
-						params.merge!({api_key: api_key}) if !api_key.blank?
+						params.merge!({key: api_key}) if !api_key.blank?
 
        			uri = URI.parse(build_url(path, api_version))
 		        uri.query = URI.encode_www_form(params)

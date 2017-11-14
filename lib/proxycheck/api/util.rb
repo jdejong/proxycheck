@@ -13,8 +13,9 @@ module ProxyCheck
 
 						params.merge!({key: api_key}) if !api_key.blank?
 
-       			uri = URI.parse(build_url(path, api_version))
-		        uri.query = URI.encode_www_form(params)
+						_path = path + "&" + URI.encode_www_form(params)
+       			uri = URI.parse(build_url(_path, api_version))
+		        #uri.query = _ip + "&" + URI.encode_www_form(params)
 
 		        http = Net::HTTP.new(uri.host, uri.port)
 

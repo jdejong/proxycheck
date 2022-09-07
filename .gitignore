@@ -1,0 +1,48 @@
+tmp/
+.idea/
+log/
+node_modules/
+.DS_Store
+.byebug_history
+*.digest.md5
+
+/public/assets
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+log/*
+tmp/*
+public/*
+db/*.sqlite3
+db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+spec/coverage
+target/site
+**.orig
+reports/*
+
+*.rbc
+capybara-*.html
+
+# IDEs
+.idea
+
+dump.rdb # redis dump
+rspec*.xml #rspec results
+results.xml #coverage
+rspec.xml
+/test-results
+
+*.ignore.sql
+
+/.yarnrc
+/.yarn/releases/yarn-1.22.17.cjs
+
+/app/assets/builds/*
+!/app/assets/builds/.keep

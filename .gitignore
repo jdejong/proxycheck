@@ -5,6 +5,7 @@ node_modules/
 .DS_Store
 .byebug_history
 *.digest.md5
+gemfile.lock
 
 /public/assets
 /public/packs

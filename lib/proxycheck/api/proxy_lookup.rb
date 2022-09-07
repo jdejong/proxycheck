@@ -4,10 +4,10 @@ module ProxyCheck
         module ProxyLookup
             include ProxyCheck::API::Util
 
-            API_VERSION = 'v1'
+            API_VERSION = 'v2'
 
-            def proxy_lookup(ip_address, options = {})
-                call(ip_address, API_VERSION, :get, options)
+            def proxy_lookup(target, options = {})
+                call(target, API_VERSION, :get, options)
             end
 
         end

@@ -9,13 +9,11 @@ module ProxyCheck
 
 			ROOT_URL = 'https://proxycheck.io'
 
-			def call(path, api_version = "v1", type = :get, params = {})
-
+			def call(path, api_version = "v2", type = :get, params = {})
 						params.merge!({key: api_key}) if !(api_key.nil? || api_key.empty?)
 
 						_path = path + "&" + URI.encode_www_form(params)
        			uri = URI.parse(build_url(_path, api_version))
-		        #uri.query = _ip + "&" + URI.encode_www_form(params)
 
 		        http = Net::HTTP.new(uri.host, uri.port)
 

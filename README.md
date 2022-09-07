@@ -1,13 +1,14 @@
 # ProxyCheck.io
 
-This GEM is currently a Work In Progress to provide simple bindings for interacting with the ProxyCheck.io's API. We will continue to add features to this GEM over the next couple of weeks and please assume there might be breaking changes in the future. We will do our best to keep them at a minimum and call out anything of note.
+This GEM provides simple bindings for interacting with the ProxyCheck.io's API. This current branch is to support version 2 of the proxycheck API.
 
+If you wish to use ProxyCheck v1, check the 1.0 branch.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile, specify gem version 2:
 
-    gem 'proxycheck'
+    gem 'proxycheck', ">=2.0.0", "<3.0.0"
 
 And then execute:
 
@@ -43,3 +44,4 @@ The Proxy API returns meta information about an IP Address including whether the
         tag: "Category of request" #   
     }
 
+A full list of supported can be found at https://proxycheck.io/api/#query_flags for inclusion in the parameters hash.
